@@ -142,7 +142,7 @@ export class CategoryService {
   ];
 
   private changeCategory$ = new BehaviorSubject<Category>(this.getCategoryByDefault())
-  changCategoryObs = this.changeCategory$.asObservable();
+  changeCategoryObs = this.changeCategory$.asObservable();
 
   changeCategory(category: Category): void {
     this.changeCategory$.next(category)

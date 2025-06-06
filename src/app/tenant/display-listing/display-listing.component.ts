@@ -10,11 +10,12 @@ import {NgClass} from "@angular/common";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {AvatarComponent} from "../../layout/navbar/avatar/avatar.component";
 import {map} from "rxjs";
+import {BookDateComponent} from "../book-date/book-date.component";
 
 @Component({
   selector: 'app-display-listing',
   standalone: true,
-  imports: [NgClass, FaIconComponent, AvatarComponent],
+  imports: [NgClass, FaIconComponent, AvatarComponent, BookDateComponent],
   templateUrl: './display-listing.component.html',
   styleUrl: './display-listing.component.scss'
 })
